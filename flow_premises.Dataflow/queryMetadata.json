@@ -1,0 +1,61 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Dataflow 1",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "gatewayObjectId": "4eeb13d5-73af-4f14-9953-e190c35e0a5a",
+  "queriesMetadata": {
+    "data_inicial": {
+      "queryId": "62b4f16c-30e9-4431-a715-f5795ce096dd",
+      "queryName": "data_inicial",
+      "loadEnabled": false
+    },
+    "base_transacoes": {
+      "queryId": "c7c77989-379f-469b-987e-1bf34c95fdc9",
+      "queryName": "base_transacoes",
+      "loadEnabled": false
+    },
+    "data_final": {
+      "queryId": "c294480c-f2c0-4634-a01e-00f6aa7d18b1",
+      "queryName": "data_final",
+      "loadEnabled": false
+    },
+    "calendario": {
+      "queryId": "49b2bdfe-c941-44d1-ab80-2837cf3945af",
+      "queryName": "calendario",
+      "loadEnabled": false
+    },
+    "transacoes": {
+      "queryId": "036e8a53-c9c4-41ba-bac5-2b97ab24550c",
+      "queryName": "transacoes",
+      "loadEnabled": false
+    },
+    "calendario_DataDestination": {
+      "queryId": "d0cb0d5d-bbfe-4658-b64a-9aee3a2da68d",
+      "queryName": "calendario_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "transacoes_DataDestination": {
+      "queryId": "288775e5-64db-4152-b5cf-f9988117f67d",
+      "queryName": "transacoes_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "C:\\Users\\rgeri\\OneDrive\\youtube-20241111-git-github-main\\youtube-20241111-git-github-main\\transacoes.xlsx",
+      "kind": "File",
+      "connectionId": "{\"ClusterId\":\"4eeb13d5-73af-4f14-9953-e190c35e0a5a\",\"DatasourceId\":\"4e49a294-d73d-46c0-88c6-61c251f52447\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"4eeb13d5-73af-4f14-9953-e190c35e0a5a\",\"DatasourceId\":\"d43ae2db-91e4-4d2e-9c34-ba00d2636b5c\"}"
+    }
+  ]
+}
