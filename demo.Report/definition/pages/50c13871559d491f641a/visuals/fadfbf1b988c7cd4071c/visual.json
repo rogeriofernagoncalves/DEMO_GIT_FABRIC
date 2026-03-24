@@ -1,19 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "efbb8d4776913901bffd",
+  "name": "fadfbf1b988c7cd4071c",
   "position": {
-    "x": 218.48791893998438,
-    "y": 18.955572876071706,
-    "z": 0,
-    "height": 397.06936866718627,
-    "width": 939.79734996102877,
-    "tabOrder": 0
+    "x": 219.48558067030396,
+    "y": 440.966484801247,
+    "z": 2,
+    "height": 257.39672642244739,
+    "width": 938.79968823070919,
+    "tabOrder": 2
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
             {
               "field": {
@@ -27,35 +27,44 @@
                 }
               },
               "queryRef": "calendario.Data",
-              "nativeQueryRef": "Data"
-            },
+              "nativeQueryRef": "Data",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "moedas"
+                    }
+                  },
+                  "Property": "Moeda"
+                }
+              },
+              "queryRef": "moedas.Moeda",
+              "nativeQueryRef": "Moeda"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "transacoes"
+                      "Entity": "cotacoes"
                     }
                   },
-                  "Property": "Cotação corrigida"
+                  "Property": "Cotação do dia"
                 }
               },
-              "queryRef": "transacoes.Cotação corrigida",
-              "nativeQueryRef": "Cotação corrigida"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "transacoes"
-                    }
-                  },
-                  "Property": "Total R$"
-                }
-              },
-              "queryRef": "transacoes.Total R$",
-              "nativeQueryRef": "Total R$"
+              "queryRef": "cotacoes.Cotação do dia",
+              "nativeQueryRef": "Cotação do dia"
             }
           ]
         }
@@ -84,7 +93,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "c0d3507a7dd9feddb8af",
+        "name": "17b841abb42aba0e25b7",
         "field": {
           "Column": {
             "Expression": {
@@ -98,32 +107,32 @@
         "type": "Categorical"
       },
       {
-        "name": "7a0fff76663f316147fc",
+        "name": "c6de4ef0b26c4424a9a4",
         "field": {
           "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "transacoes"
+                "Entity": "cotacoes"
               }
             },
-            "Property": "Cotação corrigida"
+            "Property": "Cotação do dia"
           }
         },
         "type": "Advanced"
       },
       {
-        "name": "eaeb170de43785066819",
+        "name": "8ebfe495a68636582274",
         "field": {
-          "Measure": {
+          "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "transacoes"
+                "Entity": "moedas"
               }
             },
-            "Property": "Total R$"
+            "Property": "Moeda"
           }
         },
-        "type": "Advanced"
+        "type": "Categorical"
       }
     ]
   }
