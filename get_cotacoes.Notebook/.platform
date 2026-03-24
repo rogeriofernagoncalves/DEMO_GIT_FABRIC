@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "get_cotacoes",
+    "description": "Notebook para buscar cotações no Banco Central"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "faf18edb-b078-be57-438e-f349638d87f6"
+  }
+}
