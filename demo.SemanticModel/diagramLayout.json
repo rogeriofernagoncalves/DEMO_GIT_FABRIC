@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 679.38305001469359,
+            "y": 0
+          },
+          "nodeIndex": "calendario",
+          "nodeLineageTag": "157b474f-b520-4599-a4c6-e8ffed6d4135",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 542.38305001469348,
+            "y": 358
+          },
+          "nodeIndex": "cotacoes",
+          "nodeLineageTag": "f973a753-25bd-4ea8-bb0f-5d1227129074",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 886.38305001469371,
+            "y": 216
+          },
+          "nodeIndex": "data_final",
+          "nodeLineageTag": "3ac0fe51-b08c-4b71-a224-cbbddf395983",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 23.201561193185057,
+            "y": 0
+          },
+          "nodeIndex": "moedas",
+          "nodeLineageTag": "4d5fc92a-7245-4c6e-8d3d-51a79e827333",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 174,
+            "y": 390
+          },
+          "nodeIndex": "transacoes",
+          "nodeLineageTag": "1460e928-be4e-406d-857d-3cfd10e4e6f4",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
