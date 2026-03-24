@@ -5,15 +5,15 @@
     "x": 429.99220576773183,
     "y": 32.922837100545593,
     "z": 0,
-    "height": 441.9641465315666,
+    "height": 623.53858144972719,
     "width": 781.16913484021813,
     "tabOrder": 0
   },
   "visual": {
-    "visualType": "areaChart",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -27,31 +27,35 @@
                 }
               },
               "queryRef": "calendario.Data",
-              "nativeQueryRef": "Data",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
+              "nativeQueryRef": "Data"
+            },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "cotacoes"
-                        }
-                      },
-                      "Property": "Cotacao"
+                    "SourceRef": {
+                      "Entity": "transacoes"
                     }
                   },
-                  "Function": 1
+                  "Property": "Cotação corrigida"
                 }
               },
-              "queryRef": "Avg(cotacoes.Cotacao)",
-              "nativeQueryRef": "Média de Cotacao"
+              "queryRef": "transacoes.Cotação corrigida",
+              "nativeQueryRef": "Cotação corrigida"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "transacoes"
+                    }
+                  },
+                  "Property": "Total R$"
+                }
+              },
+              "queryRef": "transacoes.Total R$",
+              "nativeQueryRef": "Total R$"
             }
           ]
         }
@@ -80,7 +84,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "f88179cefc31da79f2c0",
+        "name": "c0d3507a7dd9feddb8af",
         "field": {
           "Column": {
             "Expression": {
@@ -94,20 +98,29 @@
         "type": "Categorical"
       },
       {
-        "name": "d5cf6b9d125c1f7a1351",
+        "name": "7a0fff76663f316147fc",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "cotacoes"
-                  }
-                },
-                "Property": "Cotacao"
+              "SourceRef": {
+                "Entity": "transacoes"
               }
             },
-            "Function": 1
+            "Property": "Cotação corrigida"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "eaeb170de43785066819",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "transacoes"
+              }
+            },
+            "Property": "Total R$"
           }
         },
         "type": "Advanced"
